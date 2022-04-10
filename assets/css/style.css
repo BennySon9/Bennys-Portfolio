@@ -1,0 +1,102 @@
+body {
+  overflow-x: hidden;
+}
+
+/* Entire Header */
+header {
+  width: 100%;
+  display: flex;
+  border-bottom: solid;
+  height: 5em;
+  background-color: darkblue;
+  color: navy;
+}
+
+#headerLabel {
+  width: 10%;
+  min-width: 16em;
+  display: inline-block;
+}
+
+#headerNav {
+  width: 75%;
+  display: inline-block;
+  align-items: center;
+  padding: 1em;
+  color: lightblue;
+}
+
+/* Header H1 */
+#headerLabel h1 {
+  width: 100%;
+  display: inline-block;
+  background-color: lightblue;
+  text-align: right;
+  font-size: 2.5em;
+  font-weight: 60em;
+}
+
+/* Navigation Block on Right */
+#headerNav nav {
+  width: 100%;
+  display: inline-block;
+}
+
+/* Navigation List */
+#headerNav nav > ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+/* Navigation Items */
+#headerNav nav > ul > li {
+  font-size: 1.5em;
+  display: inline-block;
+  margin-right: 2em;
+  border-bottom: solid;
+}
+
+/* Banner */
+#banner {
+  display: flex;
+  width: 100%;
+  height: 15em;
+  background-color: red;
+}
+/* Banner txt */
+#bannerText {
+  font-size: 2.5em;
+  font-weight: 600;
+  background-color: lightblue;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+#information {
+  width: 100%;
+}
+
+.info-block {
+  display: flex;
+  padding-right: 2em;
+  margin-top: 2em;
+}
+
+.info-block-header {
+  display: inline-block;
+  font-size: 3em;
+  text-align: right;
+  width: 10%;
+  border-right: solid;
+  padding-right: 1em;
+  height: 6em;
+}
+
+.info-block-content {
+  display: inline-block;
+  padding-left: 2em;
+}
