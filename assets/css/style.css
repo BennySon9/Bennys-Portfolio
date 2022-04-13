@@ -1,14 +1,11 @@
-body {
-  overflow-x: hidden;
-}
-
 /* Entire Header */
 header {
   width: 100%;
   display: flex;
+  flex-direction: row;
   border-bottom: solid;
   height: 5em;
-  background-color: darkblue;
+  background-color: navy;
   color: navy;
 }
 
@@ -28,11 +25,10 @@ header {
 
 /* Header H1 */
 #headerLabel h1 {
-  width: 100%;
   display: inline-block;
   background-color: lightblue;
   text-align: right;
-  font-size: 2.5em;
+  font-size: 40px;
   font-weight: 60em;
 }
 
@@ -48,6 +44,7 @@ header {
   width: 100%;
   list-style: none;
   justify-content: flex-end;
+  margin-left: 5px;
 }
 
 /* Navigation Items */
@@ -78,6 +75,17 @@ header {
 
 #information {
   width: 100%;
+  border: solid yellow;
+}
+
+#information ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+#information ul li {
+  border: solid green;
 }
 
 .info-block {
@@ -99,4 +107,110 @@ header {
 .info-block-content {
   display: inline-block;
   padding-left: 2em;
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.portfolio-style {
+  margin: 30px;
+}
+
+.container-info {
+  width: 100%;
+}
+
+.container-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: left black 3px solid;
+  margin-left: 20px;
+  padding-left: 2%;
+}
+
+.containers {
+  display: flex;
+}
+
+.container1 {
+  background-color: blue;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(0, 255, 255);
+  background-position: center;
+  background-image: url();
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin: 10px;
+}
+
+.container2 {
+  background-color: blue;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(0, 255, 255);
+  background-position: center;
+  background-image: url();
+  width: 50%;
+  height: 250px;
+  margin: 10px;
+}
+
+.container3 {
+  background-color: blue;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(0, 255, 255);
+  background-position: center;
+  background-image: url();
+  width: 50%;
+  height: 250px;
+  margin: 10px;
+}
+
+.container4 {
+  background-color: blue;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(0, 255, 255);
+  background-position: center;
+  background-image: url();
+  width: 50%;
+  height: 250px;
+  margin: 10px;
+}
+
+.container5 {
+  background-color: blue;
+  color: rgb(2, 78, 118);
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(0, 255, 255);
+  background-position: center;
+  background-image: url();
+  width: 50%;
+  height: 250px;
+  margin: 10px;
+}
+
+.container-style p {
+  background-color: aqua;
+  color: darkblue;
+  align-items: flex-start;
+}
+
+.web-links {
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+  margin: 0;
 }
