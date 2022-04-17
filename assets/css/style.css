@@ -1,21 +1,36 @@
-body {
-  overflow-x: hidden;
+:root {
+  --primary-color: darkorange;
+  --secondary-color: darkgrey;
+  --tertiary-color: black;
 }
 
 /* Entire Header */
 header {
   width: 100%;
   display: flex;
-  border-bottom: solid;
-  height: 5em;
-  background-color: darkblue;
-  color: navy;
+  height: 90px;
+  background-color: darkorange;
+  color: darkorange;
 }
 
+header h1 {
+  width: 125%;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+/* header style */
 #headerLabel {
-  width: 10%;
-  min-width: 16em;
+  min-width: 15%;
+  width: 9%;
   display: inline-block;
+  margin-bottom: 75px;
 }
 
 #headerNav {
@@ -23,80 +38,288 @@ header {
   display: inline-block;
   align-items: center;
   padding: 1em;
-  color: lightblue;
+  color: darkorange;
 }
 
-/* Header H1 */
+/* Header H1 txt */
 #headerLabel h1 {
-  width: 100%;
-  display: inline-block;
-  background-color: lightblue;
-  text-align: right;
-  font-size: 2.5em;
+  background-color: black;
+  font-size: 45px;
   font-weight: 60em;
+  display: inline-block;
+  text-align: right;
 }
 
 /* Navigation Block on Right */
 #headerNav nav {
-  width: 100%;
-  display: inline-block;
-}
-
-/* Navigation List */
-#headerNav nav > ul {
+  width: 40%;
   display: flex;
-  width: 100%;
-  list-style: none;
-  justify-content: flex-end;
-}
-
-/* Navigation Items */
-#headerNav nav > ul > li {
-  font-size: 1.5em;
-  display: inline-block;
-  margin-right: 2em;
-  border-bottom: solid;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  float: right;
 }
 
 /* Banner */
 #banner {
   display: flex;
   width: 100%;
-  height: 15em;
-  background-color: red;
+  height: 200px;
+  background-image: url(/assets/images/background-img.png);
+  background-size: cover;
+  background-position: center;
 }
-/* Banner txt */
+
 #bannerText {
-  font-size: 2.5em;
+  font-size: 40px;
   font-weight: 600;
-  background-color: lightblue;
+  background-color: darkorange;
   margin-top: auto;
   margin-left: auto;
   margin-right: 2em;
   margin-bottom: 1em;
 }
 
-#information {
-  width: 100%;
+.nav-block {
+  border-bottom: 2px solid black;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .info-block {
   display: flex;
-  padding-right: 2em;
-  margin-top: 2em;
+  flex-direction: row;
 }
 
 .info-block-header {
-  display: inline-block;
-  font-size: 3em;
-  text-align: right;
-  width: 10%;
-  border-right: solid;
-  padding-right: 1em;
-  height: 6em;
+  margin: 50px;
+  flex-direction: column;
+}
+
+.info-block-header h2 {
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .info-block-content {
+  display: flex;
+  flex-wrap: wrap;
+  border-left: solid darkorange 3px;
+}
+
+.info-block-content p {
+  padding-left: 30px;
+}
+
+.info-block-content img {
+  margin-left: 400px;
+  border-radius: 10px 0px 10px 0px;
+  border: 4px solid darkorange;
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: row;
+  margin: 9px;
+}
+
+.portfolio-style {
+  margin: 50px;
+}
+
+.portfolio-style h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.container-info {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.container-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-left: darkorange 3px solid;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding-left: 2%;
+}
+
+.containers {
+  display: flex;
+  position: relative;
+}
+
+.container1 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255, 140, 0);
+  width: 100%;
+  height: 500px;
+  margin: 0.5%;
+}
+
+.container2 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255, 140, 0);
+  width: 50%;
+  height: 250px;
+  margin: 10px;
+}
+
+.container3 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255, 140, 0);
+  width: 50%;
+  height: 250px;
+  margin: 10px;
+}
+
+.container4 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255, 140, 0);
+  width: 50%;
+  height: 250px;
+  margin: 10px;
+}
+
+.container5 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255, 140, 0);
+  width: 50%;
+  height: 250px;
+  margin: 10px;
+}
+
+.container-style p {
+  background-color: darkorange;
+  color: darkblue;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.web-links {
+  position: absolute;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0;
+}
+
+/* footer section */
+footer {
+  display: flex;
+  height: 90px;
+  min-height: 90px;
+}
+
+footer h2 {
+  border-right: 3px solid darkorange;
+}
+
+#footerHeader {
+  width: 9%;
+  min-width: 15%;
   display: inline-block;
-  padding-left: 2em;
+  margin: 15px;
+}
+
+#footerHeader h2 {
+  font-weight: bold;
+  font-size: 45px;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+#footerNav {
+  width: 65%;
+  display: inline-block;
+  align-items: center;
+  padding: 1em;
+  color: darkorange;
+}
+
+#footerNav nav {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  float: right;
+  margin-top: 30px;
+}
+/* footer section ends*/
+
+.container-style:hover {
+  cursor: pointer;
+  transform: scale(1);
+  transform-origin: top left;
+}
+
+/* Media queries for smaller desktop screens and smaller */
+@media only screen and (max-width: 980px) {
+  /* header/nav section */
+  header {
+    display: block;
+  }
+
+  /* header/nav section ends */
+
+  /* about me section */
+  .info-block {
+    display: block;
+  }
+
+  .info-block-header h2 {
+    text-align: center;
+  }
+
+  .info-block-content {
+    display: center;
+    margin: 25px;
+    border-left: none;
+    border-top: darkorange 3px solid;
+  }
+
+  /* about me section ends */
+
+  /* work section */
+  .parent-container {
+    display: block;
+  }
+
+  .portfolio-style {
+    margin: 25px;
+    border-bottom: darkorange 3px solid;
+  }
+
+  .portfolio-style h2 {
+    text-align: center;
+  }
+
+  .container-content {
+    border-left: none;
+    border-right: none;
+  }
+
+  /* work section ends */
+
+  /* contact/nav section */
+  footer {
+    display: block;
+  }
+
+  footer h2 {
+    text-align: center;
+    border-right: none;
+    border-bottom: darkorange 3px solid;
+  }
+
+  /* contact/nav section ends */
 }
