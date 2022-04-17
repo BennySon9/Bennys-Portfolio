@@ -46,7 +46,6 @@ a:focus {
   background-color: black;
   font-size: 45px;
   font-weight: 60em;
-  display: inline-block;
   text-align: right;
 }
 
@@ -121,7 +120,7 @@ a:focus {
 .parent-container {
   display: flex;
   flex-direction: row;
-  margin: 9px;
+  margin: 70px;
 }
 
 .portfolio-style {
@@ -135,7 +134,6 @@ a:focus {
 
 .container-info {
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .container-content {
@@ -144,7 +142,6 @@ a:focus {
   flex-direction: column;
   border-left: darkorange 3px solid;
   margin-left: 18px;
-  margin-right: 18px;
   padding-left: 2%;
 }
 
@@ -154,12 +151,12 @@ a:focus {
 }
 
 .container1 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgb(255, 140, 0);
+  border: 3px solid darkorange;
+  color: rgb(255, 140, 0);
   width: 100%;
   height: 500px;
   margin: 0.5%;
+  margin: 10px;
 }
 
 .container2 {
@@ -202,14 +199,26 @@ a:focus {
   background-color: darkorange;
   color: darkblue;
   align-items: flex-start;
-  margin: 20px;
+  margin-top: 160px;
+  border: 3px solid black;
+}
+
+.container-style:hover {
+  cursor: pointer;
+  transform: scale(1);
+  transform-origin: top left;
 }
 
 .web-links {
   position: absolute;
+}
+
+.web-links p {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 55px;
+  color: black;
   margin: 0;
+  margin-top: 160px;
 }
 
 /* footer section */
@@ -217,10 +226,12 @@ footer {
   display: flex;
   height: 90px;
   min-height: 90px;
+  width: 100%;
 }
 
 footer h2 {
   border-right: 3px solid darkorange;
+  color: black;
 }
 
 #footerHeader {
@@ -235,6 +246,7 @@ footer h2 {
   font-size: 45px;
   display: inline-block;
   padding-right: 30px;
+  padding-left: 50px;
 }
 
 #footerNav {
@@ -249,26 +261,54 @@ footer h2 {
   width: 75%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   float: right;
   margin-top: 30px;
 }
 /* footer section ends*/
 
-.container-style:hover {
-  cursor: pointer;
-  transform: scale(1);
-  transform-origin: top left;
-}
-
 /* Media queries for smaller desktop screens and smaller */
 @media only screen and (max-width: 980px) {
   /* header/nav section */
   header {
+    display: flex;
+    background-color: darkorange;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #headerLabel {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  #headerLabel h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: darkorange;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  #headerNav {
+    margin-top: -2em;
+    width: 100%;
+    align-items: center;
+    color: black;
+    float: none;
     display: block;
   }
 
+  #headerNav nav {
+    width: 100%;
+    justify-content: center;
+  }
   /* header/nav section ends */
 
   /* about me section */
@@ -276,50 +316,106 @@ footer h2 {
     display: block;
   }
 
+  .info-block-header {
+    display: block;
+    margin: 0px;
+  }
+
   .info-block-header h2 {
     text-align: center;
+    border-bottom: darkorange 3px solid;
   }
 
   .info-block-content {
-    display: center;
-    margin: 25px;
+    display: block;
     border-left: none;
-    border-top: darkorange 3px solid;
+  }
+
+  .info-block-content img {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+    min-height: 300px;
+    min-width: 300px;
   }
 
   /* about me section ends */
 
   /* work section */
   .parent-container {
-    display: block;
+    flex-direction: column;
+    margin: 12px;
+  }
+
+  .container-style {
+    width: 95%;
+    margin-top: 1.5em;
   }
 
   .portfolio-style {
+    display: block;
     margin: 25px;
-    border-bottom: darkorange 3px solid;
   }
 
   .portfolio-style h2 {
     text-align: center;
+    border-bottom: darkorange 3px solid;
+    margin: 0;
+    text-align: center;
+  }
+
+  .containers {
+    flex-direction: column;
   }
 
   .container-content {
     border-left: none;
     border-right: none;
+    display: block;
+    margin-left: 0;
+  }
+
+  .container1 {
+    margin: 0;
+    width: 100%;
+  }
+
+  .container2,
+  .container3,
+  .container4 .container5 {
+    margin: 0;
   }
 
   /* work section ends */
 
-  /* contact/nav section */
+  /* footer/contact*/
   footer {
     display: block;
+    text-align: center;
+    margin: auto;
   }
 
-  footer h2 {
-    text-align: center;
+  #footerHeader h2 {
+    display: block;
     border-right: none;
     border-bottom: darkorange 3px solid;
+    margin: auto;
   }
 
-  /* contact/nav section ends */
+  #footerNav nav {
+    display: block;
+    flex-direction: column;
+    margin-left: none;
+    padding-left: none;
+    margin: auto;
+  }
+
+  .nav-block {
+    font-size: 20px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  /* footer/contact */
 }
