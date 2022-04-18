@@ -3,7 +3,7 @@
   /* header/nav section */
   header {
     display: flex;
-    background-color: darkorange;
+    background-color: var(--primary-color);
     width: 100%;
     height: auto;
     text-align: center;
@@ -21,8 +21,8 @@
   #headerLabel h1 {
     font-weight: bold;
     font-size: 40px;
-    color: darkorange;
-    background-color: black;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     text-align: center;
     width: 100%;
     height: auto;
@@ -58,7 +58,7 @@
   }
 
   .info-block-header h2 {
-    border-bottom: darkorange 3px solid;
+    border-bottom: 3px solid var(--primary-color);
   }
 
   .info-block-content {
@@ -103,7 +103,7 @@
   }
 
   .portfolio-style h2 {
-    border-bottom: darkorange 3px solid;
+    border-bottom: 3px solid var(--primary-color);
     margin: 0;
   }
 
@@ -140,7 +140,7 @@
 
   #footerHeader h2 {
     border-right: none;
-    border-bottom: darkorange 3px solid;
+    border-bottom: 3px solid var(--primary-color);
     margin: auto;
     padding-left: 0;
     padding-right: 0;
