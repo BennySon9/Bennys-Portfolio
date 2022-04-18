@@ -2,6 +2,9 @@
   --primary-color: darkorange;
   --secondary-color: black;
 }
+body {
+  background-color: darkgrey;
+}
 
 /* Entire Header */
 header {
@@ -44,7 +47,7 @@ a:focus {
 #headerLabel h1 {
   background-color: var(--secondary-color);
   font-size: 45px;
-  font-weight: 60em;
+  font-weight: bold;
   text-align: right;
 }
 
@@ -58,7 +61,7 @@ a:focus {
   float: right;
 }
 
-/* Banner */
+/* Banner starts */
 #banner {
   display: flex;
   width: 100%;
@@ -82,23 +85,26 @@ a:focus {
   font-size: 25px;
   font-weight: bold;
   margin-top: 10px;
-  text-decoration: underline;
+  text-decoration: underline 3px var(--primary-color);
   color: black;
 }
+/* banner ends*/
 
+/* about me section begins */
 .info-block {
   display: flex;
   flex-direction: row;
 }
 
 .info-block-header {
-  margin: 50px;
+  margin: 90px;
   flex-direction: column;
 }
 
 .info-block-header h2 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
+  justify-content: right;
 }
 
 .info-block-content {
@@ -108,7 +114,8 @@ a:focus {
 }
 
 .info-block-content p {
-  padding-left: 30px;
+  padding-left: 150px;
+  padding-right: 200px;
 }
 
 .info-block-content img {
@@ -116,7 +123,9 @@ a:focus {
   border-radius: 10px 0px 10px 0px;
   border: 4px solid var(--primary-color);
 }
+/* about me section ends */
 
+/* work section starts */
 .parent-container {
   display: flex;
   flex-direction: row;
@@ -128,7 +137,7 @@ a:focus {
 }
 
 .portfolio-style h2 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
 }
 
@@ -215,13 +224,14 @@ a:focus {
 
 .web-links p {
   font-weight: bold;
-  font-size: 55px;
+  font-size: 45px;
   color: var(--secondary-color);
   margin: 0;
   margin-top: 160px;
 }
+/* work section ends */
 
-/* footer section */
+/* contact me / footer section */
 footer {
   display: flex;
   height: 90px;
@@ -238,15 +248,16 @@ footer h2 {
   width: 9%;
   min-width: 15%;
   display: inline-block;
-  margin: 15px;
+  margin-left: 15px;
 }
 
 #footerHeader h2 {
   font-weight: bold;
   font-size: 45px;
   display: inline-block;
-  padding-right: 30px;
-  padding-left: 50px;
+  padding-right: 25px;
+  padding-left: 60px;
+  text-align: right;
 }
 
 #footerNav {
@@ -266,4 +277,4 @@ footer h2 {
   float: right;
   margin-top: 50px;
 }
-/* footer section ends*/
+/* contact me / footer section ends*/

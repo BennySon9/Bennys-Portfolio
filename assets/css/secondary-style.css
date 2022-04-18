@@ -135,7 +135,7 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 90%;
   }
 
   #footerHeader h2 {
@@ -146,13 +146,14 @@
     padding-right: 0;
     display: block;
     width: 100%;
+    text-align: left;
   }
 
   #footerNav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 82%;
+    width: 90%;
     padding: 0;
   }
 
